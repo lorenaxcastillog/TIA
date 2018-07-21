@@ -210,7 +210,8 @@ int main(int argc, char *argv[])
 
     ///imagenes de prueba
     string list_ima[]={"mdb001.pgm","mdb002.pgm","mdb003.pgm","mdb004.pgm","mdb023.pgm"};
-    recognize("netMIAS", (list_ima[i]).c_str());
+    for(int i=0 ; i < 5; i++)
+        recognize("netMIAS", (list_ima[i]).c_str());
 
 
     return 0;
